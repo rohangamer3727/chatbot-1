@@ -44,6 +44,10 @@ server.listen(3000, () => {
   client.logger.info('App listening on port 3000.');
 });
 
+client.rest.on('rateLimited', async (ratelimitData) => {
+  client.logger.warn(ratelimitData);
+});
+
 readdirSync('./src/listeners/').map((file) => {
   const event = require(`../src/listeners/${file}`);
   client.logger.info(`Event : Loaded ${event.name}`);

@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sicklinebro/anonymous4078.git"
+    "url": "git+https://github.com/Anonymous/chatbot.git"
   },
   "keywords": [],
   "author": "Anonymous4078",
@@ -20,10 +20,10 @@
   "homepage": "https://github.com/Anonymous4078/chatbot#readme",
   "devDependencies": {
     "eslint": "8.18.0",
-    "node": "18.4.0"
+    "node": "17.9.1"
   },
   "dependencies": {
-    "discord.js": "^14.0.0-dev.1653480262-68d5169",
+    "discord.js": "^14.0.0-dev.1655815511-c6f285b",
     "dotenv": "^16.0.0",
     "mongoose": "^6.0.12",
     "pino": "^8.0.0",

@@ -25,6 +25,7 @@ module.exports = {
     const data = await collection.findOne({ guildId: message.guildId });
 
     const prefix = data?.prefix ?? client.config.defaultPrefix;
+
     if (
       !message.content.startsWith(prefix) &&
       data &&

@@ -4,7 +4,7 @@ const { ChannelType, inlineCode } = require('discord.js');
 module.exports = {
   name: 'chatbot',
   subCommands: ['enable', 'disable'],
-  description: 'Shows the server configuration.',
+  description: 'Enables/disables chatbot in a specific channel.',
   run: async (client, message, args) => {
     if (!message.member.permissions.has('Administrator')) {
       return message.channel.send(
@@ -48,7 +48,6 @@ module.exports = {
           } | Chatbot is already enabled in ${channel.toString()}.`
         );
       }
-
 
       await collection.findOneAndUpdate(
         { guildId: message.guildId },
