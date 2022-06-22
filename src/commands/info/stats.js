@@ -1,4 +1,10 @@
-const { bold, EmbedBuilder, version, time, TimestampStyles } = require('discord.js');
+const {
+  bold,
+  EmbedBuilder,
+  version,
+  time,
+  TimestampStyles,
+} = require('discord.js');
 const { cpus } = require('node:os');
 
 module.exports = {
@@ -33,7 +39,10 @@ ${bold('Members')} : ${client.guilds.cache.reduce(
         )}
 ${bold('Discord.js')} : v${version}
 ${bold('Node.js')} : ${process.version}
-${bold('Uptime')} : ${time(Math.round((Date.now() - client.uptime) / 1000), TimestampStyles.RelativeTime)}
+${bold('Uptime')} : ${time(
+          Math.round((Date.now() - client.uptime) / 1000),
+          TimestampStyles.RelativeTime
+        )}
 ${bold('Total heap')} : ${(heapTotal / 1024 / 1024).toFixed(2)}MB
 ${bold('Heap used')} : ${(heapUsed / 1024 / 1024).toFixed(2)}MB
 ${bold('RSS')}: ${(rss / 1024 / 1024).toFixed(2)}MB

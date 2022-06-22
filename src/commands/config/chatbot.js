@@ -23,10 +23,14 @@ module.exports = {
       }
 
       if (
-        [ChannelType.GuildVoice, ChannelType.GuildVoice].includes(channel.type)
+        [
+          ChannelType.GuildCategory,
+          ChannelType.GuildStageVoice,
+          ChannelType.GuildVoice,
+        ].includes(channel.type)
       ) {
         return message.channel.send(
-          `${client.config.emojis.cross} | Can't enable chatbot in a stage or voice channel.`
+          `${client.config.emojis.cross} | Can't enable chatbot in a category, stage or voice channel.`
         );
       }
 
@@ -44,7 +48,7 @@ module.exports = {
       if (data) {
         return message.channel.send(
           `${
-            client.config.emoji.cross
+            client.config.emojis.cross
           } | Chatbot is already enabled in ${channel.toString()}.`
         );
       }
@@ -69,10 +73,14 @@ module.exports = {
       }
 
       if (
-        [ChannelType.GuildVoice, ChannelType.GuildVoice].includes(channel.type)
+        [
+          ChannelType.GuildCategory,
+          ChannelType.GuildStageVoice,
+          ChannelType.GuildVoice,
+        ].includes(channel.type)
       ) {
         return message.channel.send(
-          `${client.config.emojis.cross} | Can't disable chatbot in a stage or voice channel.`
+          `${client.config.emojis.cross} | Can't disable chatbot in a category, stage or voice channel.`
         );
       }
 

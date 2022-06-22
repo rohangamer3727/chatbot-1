@@ -6,12 +6,6 @@ module.exports = {
   name: 'messageCreate',
   execute: async (client, message) => {
     if (message.author.bot || message.system || message.webhookId) return;
-    const regEx = new RegExp(`/^<@!?${client.user.id}>$/`);
-    if (regEx.test(message.content)) {
-      message.channel.send(
-        `My prefix in this server is ${inlineCode(prefix)}.`
-      );
-    }
 
     if (
       !message.guild.members.me.permissions.has('SendMessages') ||
@@ -23,8 +17,14 @@ module.exports = {
     }
 
     const data = await collection.findOne({ guildId: message.guildId });
-
     const prefix = data?.prefix ?? client.config.defaultPrefix;
+
+    const regEx = new RegExp(`^<@!?${client.user.id}>$`);
+    if (regEx.test(message.content)) {
+      message.channel.send(
+        `My prefix in this server is ${inlineCode(prefix)}.`
+      );
+    }
 
     if (
       !message.content.startsWith(prefix) &&
