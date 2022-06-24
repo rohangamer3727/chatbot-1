@@ -3,9 +3,9 @@ const logger = pino({
   transport: {
     target: 'pino-pretty',
     options: {
-      level: 'trace',
+      level: 'error',
       colorize: true,
-      customColors: 'error:red,info:blue,fatal:red,warn:yellow,debug:green',
+      customColors: 'error:red,info:blue,warn:yellow',
       useOnlyCustomProps: true,
       ignore: 'pid,hostname',
       timestampKey: 'time',

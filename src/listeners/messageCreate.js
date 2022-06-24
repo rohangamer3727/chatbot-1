@@ -31,8 +31,11 @@ module.exports = {
       data &&
       data.channelIds.includes(message.channel.id)
     ) {
+      const brainId = process.env.BRAINSHOP_BRAIN_ID;
+      const apiKey = process.env.BRAINSHOP_API_KEY;
+
       const response = await fetch(
-        `http://api.brainshop.ai/get?bid=167333&key=1mP86FGTyKwUPFT3&uid=${message.userId}&msg=${message.content}`
+        `http://api.brainshop.ai/get?bid=${brainId}&key=${apiKey}&uid=${message.userId}&msg=${encodeURIComponent(message.content)}`
       );
       const json = await response.json();
 
