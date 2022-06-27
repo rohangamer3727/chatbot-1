@@ -1,8 +1,8 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",	
-  "extends": [
+        "extends": [
 	"config:base",
-		":assignAndReview(@muchnameless)",
+		":assignAndReview(@Anonymous4078)",
 		":disableRateLimiting",
 		":followTag(discord.js, dev)",
 		":semanticCommitTypeAll(chore)",
