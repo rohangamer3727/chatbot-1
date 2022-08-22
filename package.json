@@ -26,7 +26,7 @@
     "node": "18.7.0"
   },
   "dependencies": {
-    "discord.js": "^14.2.1-dev",
+    "discord.js": "^14.3.1-dev",
     "dotenv": "^16.0.0",
     "mongoose": "^6.0.12",
     "pino": "^8.0.0",
