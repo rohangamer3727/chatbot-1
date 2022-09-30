@@ -2,9 +2,9 @@ name: ESLint
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
   schedule:
     - cron: '18 20 * * 1'
 
@@ -22,7 +22,6 @@ jobs:
       - name: Install ESLint
         run: |
           npm install eslint@8.10.0
-          
+
       - name: Run ESLint
         run: npm run lint
-       

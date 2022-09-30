@@ -14,4 +14,3 @@
 # 📋 License
 
 Distributed under the GNU General Public License v3.0 License. See [`LICENSE`](https://github.com/Anonymous4078/chatbot/blob/main/LICENSE) for more information.
-
