@@ -5,10 +5,10 @@
 		":assignAndReview(@Anonymous4078)",
 		":disableRateLimiting",
 		":semanticCommitTypeAll(chore)",
-		"default:automergeDigest",
-	],
-	"labels": ["dependencies"],
-	"lockFileMaintenance": {
+		"default:automergeDigest"
+   ],
+   "labels": ["dependencies"],
+   "lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true
 	}
