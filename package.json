@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Anonymous4078/chatbot#readme",
   "devDependencies": {
     "eslint": "8.27.0",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "node": "19.0.1",
     "prettier": "2.7.1"
