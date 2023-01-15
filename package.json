@@ -20,7 +20,7 @@
   "bugs": "https://github.com/Anonymous4078/chatbot/issues",
   "homepage": "https://github.com/Anonymous4078/chatbot#readme",
   "devDependencies": {
-    "eslint": "8.31.0",
+    "eslint": "8.32.0",
     "husky": "8.0.3",
     "lint-staged": "13.1.0",
     "node": "19.4.0",
