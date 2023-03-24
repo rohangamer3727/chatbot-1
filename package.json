@@ -32,7 +32,7 @@
     "mongoose": "^6.6.2",
     "pino": "^8.6.1",
     "pino-pretty": "^9.1.0",
-    "undici": "^5.10.0"
+    "undici": "^5.19.1"
   },
   "lint-staged": {
     "**/*.{js,md,json}": "prettier --write"
